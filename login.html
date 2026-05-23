@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Login to Ram Krishna Vidya Mandir portal. Admin and user access for school management, notifications, and admission forms.">
+  <title>Login — Ram Krishna Vidya Mandir</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+<!-- Top Bar -->
+<div class="topbar">
+  <div class="container">
+    <div class="topbar-left">
+      <span>📞 +91-XXXXX-XXXXX</span>
+      <span>✉️ info@rkvm.edu.in</span>
+    </div>
+    <div class="topbar-right">
+      <a href="#" title="Facebook">📘</a>
+      <a href="#" title="Twitter">🐦</a>
+      <a href="#" title="Instagram">📷</a>
+      <a href="#" title="YouTube">▶️</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">RK</div>
+      <div class="logo-text">
+        <h1>Ram Krishna Vidya Mandir</h1>
+        <span class="logo-sub">Gandhi Nikunj, Bhagalpur</span>
+      </div>
+    </a>
+
+    <button class="menu-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+        <li class="nav-item">
+          <a href="about.html" class="nav-link">About Us <span class="arrow">▼</span></a>
+          <div class="dropdown">
+            <a href="about.html#mission">Mission &amp; Vision</a>
+            <a href="about.html#founders">The Founders</a>
+            <a href="about.html#principal">The Principal</a>
+            <a href="about.html#board">Advisory Board</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="admissions.html" class="nav-link">Admissions <span class="arrow">▼</span></a>
+          <div class="dropdown">
+            <a href="admissions.html#booklist">Book List</a>
+            <a href="admissions.html#query">Admission Query</a>
+            <a href="admissions.html#procedure">Admission Procedure</a>
+            <a href="admissions.html#form">Online Admission</a>
+            <a href="admissions.html#fees">Fee Structure</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="facilities.html" class="nav-link">Facilities <span class="arrow">▼</span></a>
+          <div class="dropdown">
+            <a href="facilities.html#it">IT Education</a>
+            <a href="facilities.html#atl">Atal Tinkering Lab</a>
+            <a href="facilities.html#headstart">International Headstart</a>
+            <a href="facilities.html#counselling">Counselling Cell</a>
+            <a href="facilities.html#workshops">Workshops &amp; Seminars</a>
+            <a href="facilities.html#language">Language Lab</a>
+            <a href="facilities.html#library">Library</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a href="why-us.html" class="nav-link">Why Us <span class="arrow">▼</span></a>
+          <div class="dropdown">
+            <a href="why-us.html#academics">Academic Programmes</a>
+            <a href="why-us.html#beyond">Beyond Academics</a>
+            <a href="why-us.html#excellence">Centre of Excellence</a>
+          </div>
+        </li>
+        <li class="nav-item"><a href="hostel.html" class="nav-link">Hostel</a></li>
+        <li class="nav-item"><a href="disclosures.html" class="nav-link">Disclosures</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+        <li class="nav-item">
+          <a href="login.html" class="nav-link btn btn-primary btn-sm active" style="color:white;">Login</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<div class="mobile-overlay"></div>
+
+<!-- Login Section -->
+<div class="login-container">
+  <div>
+    <div class="text-center" style="margin-bottom: var(--space-3xl);">
+      <div class="logo" style="justify-content: center; margin-bottom: var(--space-lg);">
+        <div class="logo-icon" style="width:70px; height:70px; font-size:1.8rem;">RK</div>
+      </div>
+      <h2>Welcome Back</h2>
+      <p style="color: var(--text-secondary); font-size: 1rem;">Choose your portal to login to Ram Krishna Vidya Mandir</p>
+    </div>
+
+    <div class="login-grid">
+      <!-- Admin Login -->
+      <div class="login-card admin animate-on-scroll">
+        <div class="icon-circle">🔒</div>
+        <h3>Admin Login</h3>
+        <p class="login-desc">For school staff and management personnel. Access the admin dashboard to manage content, notifications, admissions, and more.</p>
+
+        <form data-validate>
+          <div class="form-group">
+            <input type="text" class="form-input" placeholder="Username" required>
+            <span class="form-error"></span>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-input" placeholder="Password" required>
+            <span class="form-error"></span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-md); font-size: 0.85rem;">
+            <label style="display: flex; align-items: center; gap: 6px; cursor: pointer;">
+              <input type="checkbox" style="accent-color: var(--primary);">
+              Remember me
+            </label>
+            <a href="#" style="color: var(--primary); font-weight: 500;">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn btn-primary">Login as Admin</button>
+        </form>
+
+        <div style="margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--border-light);">
+          <p style="font-size: 0.82rem; color: var(--text-light); margin-bottom: var(--space-sm);">Admin Dashboard Features:</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px; justify-content: center;">
+            <span style="background: var(--bg-cream); color: var(--primary); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 500;">Content Management</span>
+            <span style="background: var(--bg-cream); color: var(--primary); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 500;">Photo Gallery</span>
+            <span style="background: var(--bg-cream); color: var(--primary); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 500;">Notifications</span>
+            <span style="background: var(--bg-cream); color: var(--primary); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 500;">Admissions</span>
+            <span style="background: var(--bg-cream); color: var(--primary); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 500;">Results</span>
+            <span style="background: var(--bg-cream); color: var(--primary); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 500;">Fee Structure</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Login -->
+      <div class="login-card user animate-on-scroll delay-2">
+        <div class="icon-circle">👤</div>
+        <h3>User Login</h3>
+        <p class="login-desc">For parents and students. Access your dashboard to view notifications, submit admission forms, and download important documents.</p>
+
+        <form data-validate>
+          <div class="form-group">
+            <input type="email" class="form-input" placeholder="Email or Phone Number" required>
+            <span class="form-error"></span>
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-input" placeholder="Password" required>
+            <span class="form-error"></span>
+          </div>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: var(--space-md); font-size: 0.85rem;">
+            <label style="display: flex; align-items: center; gap: 6px; cursor: pointer;">
+              <input type="checkbox" style="accent-color: var(--secondary);">
+              Remember me
+            </label>
+            <a href="#" style="color: var(--secondary); font-weight: 500;">Forgot Password?</a>
+          </div>
+          <button type="submit" class="btn btn-secondary">Login as User</button>
+        </form>
+
+        <div style="margin-top: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--border-light);">
+          <p style="font-size: 0.82rem; color: var(--text-light); margin-bottom: var(--space-sm);">User Dashboard Features:</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 6px; justify-content: center;">
+            <span style="background: rgba(27,42,74,0.08); color: var(--secondary); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 500;">Notifications</span>
+            <span style="background: rgba(27,42,74,0.08); color: var(--secondary); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 500;">Admission Form</span>
+            <span style="background: rgba(27,42,74,0.08); color: var(--secondary); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 500;">Fee Structure</span>
+            <span style="background: rgba(27,42,74,0.08); color: var(--secondary); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 500;">Book Lists</span>
+            <span style="background: rgba(27,42,74,0.08); color: var(--secondary); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 500;">Events</span>
+            <span style="background: rgba(27,42,74,0.08); color: var(--secondary); padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 500;">Gallery</span>
+          </div>
+        </div>
+
+        <div style="margin-top: var(--space-lg); text-align: center;">
+          <p style="font-size: 0.88rem; color: var(--text-secondary);">
+            Don't have an account?
+            <a href="admissions.html#form" style="color: var(--primary); font-weight: 600;">Register Now</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Help Text -->
+    <div class="text-center" style="margin-top: var(--space-2xl);">
+      <p style="color: var(--text-light); font-size: 0.85rem;">
+        Having trouble logging in? Contact us at
+        <a href="mailto:info@rkvm.edu.in" style="color: var(--primary); font-weight: 500;">info@rkvm.edu.in</a>
+        or call
+        <a href="tel:+91XXXXXXXXXX" style="color: var(--primary); font-weight: 500;">+91-XXXXX-XXXXX</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <div class="logo" style="margin-bottom:var(--space-lg);">
+          <div class="logo-icon">RK</div>
+          <div class="logo-text">
+            <h1 style="color:white;font-size:1rem;">Ram Krishna Vidya Mandir</h1>
+            <span class="logo-sub">Gandhi Nikunj, Bhagalpur</span>
+          </div>
+        </div>
+        <p>Ram Krishna Vidya Mandir has been a beacon of educational excellence since its founding, dedicated to nurturing young minds with a holistic approach combining academic rigour with moral values.</p>
+        <div class="footer-social">
+          <a href="#">📘</a>
+          <a href="#">🐦</a>
+          <a href="#">📷</a>
+          <a href="#">🔗</a>
+          <a href="#">▶️</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="about.html">About Us</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="achievements.html">Achievements</a>
+        <a href="gallery.html">Photo Gallery</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-links">
+        <h4>Academics</h4>
+        <a href="why-us.html#academics">Academic Programmes</a>
+        <a href="why-us.html#beyond">Beyond Academics</a>
+        <a href="admissions.html#fees">Fee Structure</a>
+        <a href="admissions.html#booklist">Book Lists</a>
+        <a href="disclosures.html">Public Disclosures</a>
+        <a href="hostel.html">Hostel</a>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <div class="footer-contact-item">
+          <span class="icon">📍</span>
+          <span>Gandhi Nikunj, Rannuchak, Bhagalpur – 812004, Bihar, India</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">📞</span>
+          <span>+91-XXXXX-XXXXX</span>
+        </div>
+        <div class="footer-contact-item">
+          <span class="icon">✉️</span>
+          <span>info@rkvm.edu.in</span>
+        </div>
+        <div class="footer-map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.123!2d86.98!3d25.24!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjXCsDE0JzI0LjAiTiA4NsKwNTgnNDguMCJF!5e0!3m2!1sen!2sin!4v1" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Ram Krishna Vidya Mandir. All Rights Reserved.</span>
+      <span>Developed by <strong>Antigravity</strong></span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
